@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="id">
 	<head>
-		<title>Web Portofolio - Data Analytics</title>
+		<title>Web Portofolio - Final Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
@@ -19,16 +19,16 @@
 
 			<!-- Header -->
 			<header id="header">
-				<h1>Data Analytics Portfolio</h1>
-				<p>Kemenkeu KPPN Surabaya I</p>
+				<h1>Final Project Portfolio</h1>
+				<p>State University of Surabaya</p>
 			</header>
 
 			<!-- Main Container -->
 			<div id="main">
 				<section class="main-section">
 
-					<h2>Dokumentasi Proyek Unggulan</h2>
-					<p>Berikut adalah tangkapan layar dan visualisasi dari proyek pengolahan data, pembuatan dasbor interaktif, serta rekonsiliasi keuangan yang pernah saya kerjakan di KPPN Surabaya I.</p>
+					<h2>Documentation Car Parking Management System (GUI)</h2>
+					<p>Below are the screenshots and interface breakdowns of the Car Parking Management System (GUI):</p>
 
 					<!-- CAROUSEL COMPONENT START -->
 					<div class="project-carousel-container">
@@ -40,8 +40,8 @@
 								<div class="carousel-slide">
 									<img src="images/project/project2/project1.png" alt="Dashboard Power BI">
 									<div class="slide-caption">
-										<h3>1. Power BI Realization Dashboard</h3>
-										<p>Dasbor pemantauan alokasi pagu dan tren penyerapan anggaran dana KPPN Surabaya I secara real-time.</p>
+										<h3>1. Main Dashboard & Interactive Slot Grid</h3>
+										<p>The primary user interface featuring a 55-slot interactive parking grid with real-time status indicators (Green = Available, Red = Occupied). It includes vehicle registration input (W 2436 AW), slot allocation display, and navigation buttons (Enter, Exit, and History).</p>
 									</div>
 								</div>
 
@@ -49,8 +49,8 @@
 								<div class="carousel-slide">
 									<img src="images/project/project2/project2.png" alt="SPAN Data Cleaning">
 									<div class="slide-caption">
-										<h3>2. SPAN Data Cleaning & Pipeline</h3>
-										<p>Pembersihan data mentah transaksi SPAN dari anomali dan duplikasi untuk menjamin integritas audit.</p>
+										<h3>2. Vehicle Exit & Billing Dialog</h3>
+										<p>A pop-up notification window triggered during vehicle checkout. It automatically calculates and displays the license plate, slot number, exact entry/exit timestamps, and total parking fee.</p>
 									</div>
 								</div>
 
@@ -58,20 +58,11 @@
 								<div class="carousel-slide">
 									<img src="images/project/project2/project3.png" alt="Bank Reconciliation Excel">
 									<div class="slide-caption">
-										<h3>3. Financial Bank Reconciliation</h3>
-										<p>Sistem rekonsiliasi kas bank mitra dengan formula Advanced Excel untuk mempercepat validasi harian.</p>
+										<h3>3. Activity History & Transaction Log</h3>
+										<p>A structured log file recording full transaction records for both vehicle entry and exit events, detailing license plates, assigned slots, timestamps, and payment statuses.</p>
 									</div>
 								</div>
-
-								<!-- Slide 4 -->
-								<div class="carousel-slide">
-									<img src="images/project/project2/project4.png" alt="Bank Reconciliation Excel">
-									<div class="slide-caption">
-										<h3>3. Financial Bank Reconciliation</h3>
-										<p>Sistem rekonsiliasi kas bank mitra dengan formula Advanced Excel untuk mempercepat validasi harian.</p>
-									</div>
-								</div>
-
+								
 							</div>
 
 							<!-- Nav Buttons -->
@@ -92,23 +83,24 @@
 					</div>
 					<!-- CAROUSEL COMPONENT END -->
 
-					<h2>Penjelasan Detail Metodologi Analisis</h2>
-					<p>Dalam menjalankan tugas analitis di KPPN Surabaya I, proses pengolahan data diawali dengan *extraction & cleaning* data mentah sistem SPAN. Setiap transaksi diverifikasi untuk memastikan ketepatan akun, ketersediaan pagu, serta validitas laporan penerimaan/pengeluaran dari bank mitra.</p>
-					<p>Penggunaan fungsi *Advanced Excel* seperti VLOOKUP/XLOOKUP, INDEX-MATCH, Power Query, serta pembuatan tabel pivot dinamis sangat mempercepat efisiensi waktu rekonsiliasi kas secara harian. Hasil olahan data kemudian dihubungkan ke Power BI untuk menyajikan wawasan visual (*data insights*) yang bermanfaat bagi pengambilan keputusan manajerial.</p>
-
+					<h2>Detailed System Workflow & Implementation Methodology</h2>
+					<p>In developing this parking management system, the process began with designing a structured parking slot management logic using a 2D matrix-based data representation. Each parking slot was initialized and monitored in real time to determine its availability status, where 0 represents an available slot and 1 represents an occupied slot.</p>
+					<p>The vehicle entry process was designed with an automated slot allocation mechanism. When a vehicle enters the system, the license plate information is recorded, and the application searches for the first available parking slot. The system then updates the slot status and stores the entry timestamp for further transaction processing.</p>
+					<p>During the exit process, the system captures the checkout timestamp and calculates the total parking duration based on the difference between entry and exit times. A billing algorithm is applied to generate the parking fee automatically, while the occupied slot is released and returned to an available state.</p>
+					<p>All parking transactions are stored in a structured history log containing vehicle license information, transaction status, timestamps, assigned parking slots, and calculated fees. This approach ensures accurate data management, real-time monitoring, and efficient parking operations through an automated system workflow.</p>
 				</section>
 			</div>
 
 			<!-- Footer -->
 			<footer id="footer">
 				<section>
-					<h2>Sepatah Kata</h2>
-					<p>Berkomitmen untuk terus menyajikan data keuangan negara yang transparan, akurat, dan dapat dipertanggungjawabkan melalui pendekatan analitis dan otomatisasi teknologi.</p>
+					<h2>A Personal Note</h2>
+					<p>This project demonstrates how programming logic and data management can be combined to create an automated parking management system. By implementing real-time monitoring, automated slot allocation, and transaction tracking, the system provides an efficient solution for managing parking operations.</p>
 				</section>
 				<section>
-					<h2>Kontak</h2>
+					<h2>Contact</h2>
 					<dl class="alt">
-						<dt>Alamat</dt>
+						<dt>Addres</dt>
 						<dd>Jl Tambak Bayan Tengah Gang 2 No 2, Bubutan, Surabaya, Jawa Timur</dd>
 						<dt>Telepon / WA</dt>
 						<dd>085174173677</dd>
