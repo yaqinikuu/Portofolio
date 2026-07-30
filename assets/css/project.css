@@ -165,6 +165,7 @@
 			   ========================================================================== */
 			.project-carousel-container {
 				width: 100%;
+    height: 520px !important;
 				margin: 1.5em 0 3em 0;
 			}
 
@@ -194,7 +195,7 @@
 
 			.carousel-slide img {
 				width: 100%;
-				height: 440px;
+    height: 520px !important;
 				object-fit: cover;
 				display: block;
 			}
@@ -212,13 +213,14 @@
 				z-index: 2;
 			}
 
-			.slide-caption h3 {
-				font-size: 1.3rem;
-				color: #38bdf8;
-				margin: 0 0 6px 0;
-				font-weight: 600;
-				letter-spacing: -0.01em;
-			}
+	/* Update .slide-caption h3 color to a solid orange matching the web background theme */
+.slide-caption h3 {
+    font-size: 1.3rem;
+    color: orange !important;
+    margin: 0 0 6px 0;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
 
 			.slide-caption p {
 				font-size: 0.95rem;
@@ -286,7 +288,7 @@
 			}
 
 			.carousel-dots .dot.active {
-				background: #38bdf8;
+				background: orange;
 				width: 26px;
 				border-radius: 6px;
 			}
